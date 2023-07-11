@@ -1,3 +1,4 @@
 *.html
 *.css
-webpack.config.js
+vite.config.ts
+tsconfig.json

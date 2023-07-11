@@ -4,14 +4,31 @@
         "project": "tsconfig.json",
         "sourceType": "module"
     },
-    "plugins": ["@typescript-eslint/eslint-plugin"],
+    "plugins": ["@typescript-eslint", "import", "prettier"],
     "extends": [
-        "eslint:recommended",
+        "airbnb-base",
+        "airbnb-typescript/base",
+        "prettier",
         "plugin:@typescript-eslint/recommended",
-        "prettier"
+        "plugin:import/typescript"
     ],
     "root": true,
     "env": {
         "node": true
+    },
+    "rules": {
+        "@typescript-eslint/no-unused-vars": "error",
+        "import/prefer-default-export": "off",
+        "class-methods-use-this": "off",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+            "error",
+            {
+                "functions": false,
+                "classes": true,
+                "variables": true,
+                "allowNamedExports": false
+            }
+        ]
     }
 }
