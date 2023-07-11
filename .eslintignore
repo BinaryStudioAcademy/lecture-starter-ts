@@ -1,3 +1,5 @@
 *.html
 *.css
-webpack.config.js
+vite.config.ts
+commitlint.config.ts
+tsconfig.json
