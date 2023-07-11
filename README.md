@@ -1,4 +1,4 @@
-# JS for everyone
+# Typescript
 
 ## 🏃‍♂️ Simple start
 
