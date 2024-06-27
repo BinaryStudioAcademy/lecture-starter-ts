@@ -4,7 +4,7 @@ const config = () => {
     return defineConfig({
         server: {
             host: 'localhost',
-            port: 9050,
+            port: 8800,
         },
     });
 };
